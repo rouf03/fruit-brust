@@ -47,108 +47,203 @@
 <body class="font-lato">
 
     <header class="max-w-screen-sm lg:max-w-screen-xl my-4">
-        <nav class="navbar flex justify-between w-screen mx-auto border-x-2 lg:rounded-full h-16 bg-white lg:bg-orange py-10 px-10 my-12">
-      
-          <!-- Navigation Links for Larger Devices (lg) -->
+        <nav
+            class="navbar flex justify-between w-screen mx-auto border-x-2 lg:rounded-full h-16 bg-white lg:bg-orange py-10 px-10 my-12">
 
-          <div class="hidden lg:block">
-            <ul class="flex flex-row gap-10 text-white">
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">All Fruits</a></li>
-            </ul>
-          </div>
-      
-          <!-- Logo and Title (Always Visible) -->
+            <!-- Navigation Links for Larger Devices (lg) -->
 
-          <div class="gap-3">
-            <div><img src="images/logo.png" alt=""></div>
-            <h3 class="text-black lg:text-white">Fruit Burst</h3>
-          </div>
-      
-          <!-- Search Bar with Magnifying Glass Icon -->
+            <div class="hidden lg:block">
+                <ul class="flex flex-row gap-10 text-white">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+            </div>
 
-          <div class="relative flex items-center border rounded-full px-4 w-1/2 sm:w-full lg:w-1/5 hidden lg:block">
-            <input type="text" placeholder="Search" class="border-none outline-none w-full pr-10 bg-transparent">
-            <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-          </div>
-      
-          <!-- Dropdown Menu for Smaller Devices (sm, md) -->
+            <!-- Logo and Title (Always Visible) -->
 
-          <div class="dropdown dropdown-end block lg:hidden">
-            <label tabindex="0" class="btn btn-ghost rounded-btn"><i class="fa-solid fa-bars text-2xl text-black"></i></label>
-            <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">All Fruits</a></li>
-              <li>
-                <div class="relative flex items-center border rounded-full px-4">
-                  <input type="text" placeholder="Search" class="border-none outline-none w-full pr-10 bg-transparent">
-                  <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <div class="gap-3">
+                <div><img src="images/logo.png" alt=""></div>
+                <h3 class="text-black lg:text-white">Fruit Burst</h3>
+            </div>
+
+            <!-- Search Bar with Magnifying Glass Icon -->
+
+            <div class="relative flex items-center border rounded-full px-4 w-1/2 sm:w-full lg:w-1/5 hidden lg:block">
+                <input type="text" placeholder="Search" class="border-none outline-none w-full pr-10 bg-transparent">
+                <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-      
+                </span>
+            </div>
+
+            <!-- Dropdown Menu for Smaller Devices (sm, md) -->
+
+            <div class="dropdown dropdown-end block lg:hidden">
+                <label tabindex="0" class="btn btn-ghost rounded-btn"><i
+                        class="fa-solid fa-bars text-2xl text-black"></i></label>
+                <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                    <li>
+                        <div class="relative flex items-center border rounded-full px-4">
+                            <input type="text" placeholder="Search"
+                                class="border-none outline-none w-full pr-10 bg-transparent">
+                            <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
 
-        <div class="carousel w-full">
+        <!-- Banner Section  -->
 
-            <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                  <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                  <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                  <button class="btn btn-primary">Get Started</button>
+        <!-- <section class="mx-auto lg:relative lg:left-36">
+            <div class="carousel">
+
+                <div class="w-4/6 h-1/5 px-8 pb-8 absolute left-14 z-20 text-center justify-center">
+                  <h1 class="mb-2 lg:mb-5 text-2xl lg:text-5xl font-extrabold text-white ">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5 text-white">We supply highly quality organic products</p>
+                  <button class="btn btn-primary bg-orange hover:bg-error border-0 text-white">Shop Now</button>
+                </div>
+            
+                <div id="slide1" class="carousel-item relative w-full z-10">
+                    <img src="/images/banner1.png" class="w-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            
+        </div>
+        </section> -->
+
+        <section>
+            <div class="carousel">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner1.png); max-width: none;">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn btn-primary">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner2.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn btn-primary">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner3.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn btn-primary">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner4.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn btn-primary">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
                 </div>
               </div>
+        </section>
 
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="/images/banner1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="/images/banner2.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="/images/banner3.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="/images/banner4.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-          </div>
-          
 
-      </header>
-      
+    </header>
+
 
     <main>
 
     </main>
 
-    <footer>
+        <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
 
-    </footer>
+            <div class="gap-3">
+                <div><img src="images/logo.png" alt=""></div>
+                <h3 class="text-black lg:text-white">Fruit Burst</h3>
+            </div>
+
+            <div class="grid grid-flow-col gap-4 text-white">
+              <a class="link link-hover">Home</a> 
+              <a class="link link-hover">About Us</a> 
+              <a class="link link-hover">Shop</a> 
+              <a class="link link-hover">All Fruits</a>
+              <a class="link link-hover">Support</a>
+              <a class="link link-hover">My Account</a>
+            </div> 
+            <div>
+              <div class="grid grid-flow-col gap-4 text-white">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+              </div>
+            </div> 
+          </footer>
 </body>
 
 </html>
