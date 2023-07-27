@@ -48,7 +48,7 @@
 
   <header class="max-w-screen-sm lg:max-w-screen-xl my-4">
     <nav
-      class="navbar flex justify-between w-screen -mr-0 lg:mx-auto border-x-2 lg:rounded-full h-16 bg-white lg:bg-orange py-10 px-10 my-12">
+      class="navbar flex justify-between w-screen border-x-2 mx-auto lg:rounded-full h-16 bg-white lg:bg-orange py-10 px-10 my-12">
 
       <!-- Navigation Links for Larger Devices (lg) -->
 
@@ -100,9 +100,9 @@
 
     </nav>
 
-    <!-- Banner Section  -->
+    <!-- Banner Section -->
 
-    <!-- <section class="mx-auto lg:relative lg:left-36">
+    <section class="mx-auto relative md:left-16 lg:left-36">
             <div class="carousel">
 
                 <div class="w-4/6 h-1/5 px-8 pb-8 absolute left-14 z-20 text-center justify-center">
@@ -114,7 +114,7 @@
                 <div id="slide1" class="carousel-item relative w-full z-10">
                     <img src="/images/banner1.png" class="w-auto" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-white text-black">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
@@ -141,9 +141,11 @@
                 </div>
             
         </div>
-        </section> -->
+        </section>
 
-    <section class="container md:ml-14 lg:ml-44">
+
+
+    <!-- <section class="container md:ml-14 lg:ml-44">
       <div class="carousel">
         <div id="slide1" class="carousel-item relative w-full">
           <div class="hero min-h-screen" style="background-image: url(images/banner11.png); width: 100%;">
@@ -214,7 +216,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
   </header>
@@ -224,13 +226,13 @@
     <!-- deals section  -->
 
     <section>
-      <div class="flex flex-col lg:flex-row justify-center items-center lg:justify-between text-center my-16 px-44">
+      <div class="flex flex-col lg:flex-row justify-center items-center lg:justify-between text-center my-16 lg:px-44">
         <div class="lg:text-left">
           <h3 class="font-extrabold text-5xl mb-7">Deal of the day</h3>
           <p class="text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of
             classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="flex gap-4 items-center">
+        <div class="flex gap-4 items-center py-20">
           <div class="grid grid-flow-col gap-5 auto-cols-max">
 
             <div class="flex flex-col">
@@ -281,8 +283,8 @@
     <!-- card section  -->
 
     <section>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-32 px-48 gap-8">
-        <div class="card w-96 bg-base-100 shadow-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center p-16 lg:py-10 lg:py-32">
+        <div class="card w-72 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -342,7 +344,7 @@
 
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-72 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -402,7 +404,7 @@
 
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-72 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -462,7 +464,7 @@
 
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-72 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -527,16 +529,17 @@
 
     <!-- Meet the team Section  -->
 
-    <section>
-      <div class="w-[90rem] h-[43.125rem] bg-cover justify-center items-center py-28" style="background-image: url(images/team.png); height: fit-content;">
+    <section class="">
+      <div class="lg:w-[80rem] lg:h-[40rem] bg-cover justify-center items-center py-28" style="background-image: url(images/team.png); height: fit-content;">
         <div class="text-center">
           <h3 class="font-extrabold text-5xl text-white mb-4">Meet the team section</h3>
-          <p class="text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+            <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
-        <div class="flex justify-around p-32">
+        <div class="lg:flex justify-around p-32">
           <div class="text-center">
-            <figure><img src="images/member1.png" alt=""></figure>
+            <figure class="pt-4"><img src="images/member1.png" alt=""></figure>
             <h1 class="text-white font-bold text-xl mt-4">Awlad Hossain</h1>
             <p class="text-white">Fruits Expert</p>
             <div class="flex gap-4 justify-center mt-4">
@@ -578,7 +581,7 @@
             </div>
           </div>
           <div class="text-center">
-            <figure><img src="images/member2.png" alt=""></figure>
+            <figure class="pt-4"><img src="images/member2.png" alt=""></figure>
             <h1 class="text-white font-bold text-xl mt-4">Safia Chowdhury</h1>
             <p class="text-white">Fruits Expert</p>
             <div class="flex gap-4 mt-4 justify-center">
@@ -620,7 +623,7 @@
             </div>
           </div>
           <div class="text-center">
-            <figure><img src="images/member3.png" alt=""></figure>
+            <figure class="pt-4"><img src="images/member3.png" alt=""></figure>
             <h1 class="text-white font-bold text-xl mt-4">Rokib Hossain</h1>
             <p class="text-white">Fruits Expert</p>
             <div class="flex gap-4 justify-center mt-4">
@@ -662,7 +665,7 @@
             </div>
           </div>
           <div class="text-center">
-            <figure><img src="images/member4.png" alt=""></figure>
+            <figure class="pt-4"><img src="images/member4.png" alt=""></figure>
             <h1 class="text-white font-bold text-xl mt-4">Chaity</h1>
             <p class="text-white">Fruits Expert</p>
             <div class="flex gap-4 mt-4 justify-center">
@@ -712,9 +715,10 @@
     <section>
       <div class="my-16 text-center">
         <h3 class="text-5xl font-extrabold mb-5">Why Choose Us</h3>
-        <p class="text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <p class="text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
+          <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-3 items-center">
         <div class="p-8">
           <div class="flex justify-center items-center gap-4">
             <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -765,7 +769,9 @@
             </div>
           </div>  
         </div>
-        <div>
+        <div style="@media screen and (min-width: 768px) {
+          margin-left: 150px;
+        }">
           <figure class="my-5"><img src="images/whychoose1.png" alt=""></figure>
         </div>
         <div class="p-8">
